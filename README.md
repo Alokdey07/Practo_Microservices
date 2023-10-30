@@ -56,10 +56,8 @@ This Health Management System has been transformed into a microservices architec
    Clone the individual microservices repositories to your local machine. For example:
 
    ```bash
-   git clone https://github.com/yourusername/doctor-service.git
-   git clone https://github.com/yourusername/patient-service.git
-   git clone https://github.com/yourusername/booking-service.git
-   git clone https://github.com/yourusername/review-service.git
+   git clone https://github.com/alokdey07/Practo_Microservice.git
+   
    ```
 
 2. **Create MySQL Databases**:
@@ -83,9 +81,9 @@ This Health Management System has been transformed into a microservices architec
 The microservices-based Health Management System is accessible at the following endpoints for each microservice:
 
 - **Doctor Microservice**: http://localhost:8080/api/doctors
-- **Patient Microservice**: http://localhost:8080/api/patients
-- **Booking Microservice**: http://localhost:8080/api/bookings
-- **Review Microservice**: http://localhost:8080/api/reviews
+- **Patient Microservice**: http://localhost:8081/api/patients
+- **Booking Microservice**: http://localhost:8082/api/bookings
+- **Review Microservice**: http://localhost:8083/api/reviews
 
 You can use these endpoints to interact with the system, add doctors, patients, book appointments, and leave reviews.
 
