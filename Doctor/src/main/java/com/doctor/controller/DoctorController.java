@@ -18,7 +18,7 @@ public class DoctorController {
     private DoctorService doctorService;
 
 
-    @PostMapping("/add_doctor")
+    @PostMapping
     public ResponseEntity<DoctorDto> addDostor(@RequestBody DoctorDto dto){
 
 //         UUID uuid =UUID.randomUUID();

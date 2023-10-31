@@ -7,11 +7,20 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PatientDto {
+public class DoctorDto {
+
+
     private long id;
+
     private String name;
-    private String disease;
-    private int age;
 
+    private String qualification;
+
+    private int experience;
+
+    private boolean availability;
+
+    private Appointment appointment;
+
+    private Review review;
 }
-

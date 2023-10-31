@@ -1,4 +1,5 @@
-package com.patient.entity;
+package com.review.entity;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,17 +8,17 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "patient")
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
-public class Patient {
+@Table(name = "review")
+public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String name;
-    private String disease;
-    private int age;
+    private long doctorId;
+    private long patientId;
+    private long rating;
 
 
 }

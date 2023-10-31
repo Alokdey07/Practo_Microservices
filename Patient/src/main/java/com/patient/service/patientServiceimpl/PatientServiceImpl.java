@@ -1,4 +1,4 @@
-package com.patient.service.serviceImpl;
+package com.patient.service.patientServiceimpl;
 
 import com.patient.entity.Patient;
 import com.patient.payload.PatientDto;
@@ -13,8 +13,6 @@ import java.util.stream.Collectors;
 
 @Service
 public class PatientServiceImpl implements PatientService {
-
-
     @Autowired
     private PatientRepository patientRepository;
 
@@ -43,6 +41,5 @@ public class PatientServiceImpl implements PatientService {
     private PatientDto mapToDto(Patient patient){
         return mapper.map(patient,PatientDto.class);
     }
-
 
 }

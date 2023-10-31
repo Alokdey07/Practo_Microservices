@@ -7,5 +7,6 @@ import java.util.List;
 public interface PatientService {
     public PatientDto createPatient(PatientDto dto);
 
-   public List<PatientDto> getAllPatient();
+    public List<PatientDto> getAllPatient();
 }
+
