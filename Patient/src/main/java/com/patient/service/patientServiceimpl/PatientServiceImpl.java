@@ -31,6 +31,12 @@ public class PatientServiceImpl implements PatientService {
         return collectdto;
     }
 
+    @Override
+    public PatientDto getPatient(long patientId) {
+        Patient patient = patientRepository.findById(patientId).get();
+        return mapToDto(patient);
+    }
+
 
     private Patient mapToEntity(PatientDto dto){
 

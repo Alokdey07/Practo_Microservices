@@ -8,5 +8,7 @@ public interface PatientService {
     public PatientDto createPatient(PatientDto dto);
 
     public List<PatientDto> getAllPatient();
+
+    PatientDto getPatient(long patientId);
 }
 
