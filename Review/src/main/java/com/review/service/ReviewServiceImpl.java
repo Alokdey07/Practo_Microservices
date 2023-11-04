@@ -10,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.ArrayList;
+
 @Service
 public class ReviewServiceImpl implements ReviewService {
 
@@ -38,6 +40,12 @@ public class ReviewServiceImpl implements ReviewService {
             return null;
         }
 
+    }
+
+    @Override
+    public ArrayList<ReviewDto> getAllReviews(long doctorId) {
+        ArrayList<ReviewDto> reviewWithDoctorId = reviewRepository.getReviewWithDoctorId(doctorId);
+        return reviewWithDoctorId;
     }
 
     private ReviewDto mapToDto(Review review){
