@@ -10,6 +10,7 @@ public class RestTemplateConfig {
 
     @Bean
     public RestTemplate getRestTemplate(){
+
         return new RestTemplate();
     }
 

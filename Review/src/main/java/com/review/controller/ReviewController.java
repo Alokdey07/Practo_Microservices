@@ -5,6 +5,7 @@ import com.review.payload.ReviewDto;
 import com.review.service.ReviewService;
 import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +21,7 @@ public class ReviewController {
     @PostMapping
     public ResponseEntity<ReviewDto> createReview(@RequestBody ReviewDto reviewDto){
         ReviewDto dto = reviewService.createReview(reviewDto);
-        return ResponseEntity.ok(dto);
+        return new ResponseEntity<>(dto, HttpStatus.OK);
     }
 
     @GetMapping("/average/{doctorId}")

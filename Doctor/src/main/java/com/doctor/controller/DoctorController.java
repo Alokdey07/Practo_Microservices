@@ -43,8 +43,8 @@ public class DoctorController {
         return new ResponseEntity<>(doctorDtos,HttpStatus.OK);
     }
 
-    @GetMapping("/{doctorid}")
-    public ResponseEntity<?> findDoctorById(@PathVariable long  doctorId){
+    @GetMapping("/{doctorId}")
+    public ResponseEntity<?> findDoctorById(@PathVariable("doctorId") long  doctorId){
         DoctorDto doctorById = doctorService.findDoctorById(doctorId);
         return new ResponseEntity<>(doctorById,HttpStatus.OK);
 

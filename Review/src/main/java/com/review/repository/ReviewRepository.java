@@ -8,6 +8,6 @@ import java.util.ArrayList;
 
 public interface ReviewRepository extends JpaRepository<Review,Long> {
 
-    ArrayList<ReviewDto> getReviewWithDoctorId(long doctorId);
+    ArrayList<ReviewDto> findByDoctorId(long doctorId);
 
 }

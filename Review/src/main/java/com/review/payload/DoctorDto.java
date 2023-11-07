@@ -20,7 +20,7 @@ public class DoctorDto {
 
     private boolean availability;
 
-    private Appointment appointment;
+
 
     private Review review;
 }
